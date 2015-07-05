@@ -1,0 +1,195 @@
+{
+    "form_fields": [
+        {
+            "form_id": 1,
+            "title": "Id",
+            "field": "id",
+            "description": "The database id",
+            "element": "<input class='full' />",
+            "role": "kendoDropDownList",
+            "options": {
+                "dataSource": {
+                    "data": [1,2,3,4,5,6,7,8,9,10]
+                }
+            }
+        },
+        {
+            "form_id": 1,
+            "title": "Title",
+            "field": "title",
+            "description": "This is the title of the record",
+            "element": "<input class='k-textbox full' placeholder='enter unique title...' />"
+        },
+        {
+            "form_id": 1,
+            "field": "description",
+            "title": "Description",
+            "description": "Describe the record",
+            "element": "<textarea placeholder='describe the record...' class='k-textbox full' rows='4'></textarea>",
+            "role": "kendoEditor",
+            "options": {}
+        },
+        {
+            "form_id": 1,
+            "field": "updated_at",
+            "title": "Updated At",
+            "description": "When was the record last changed",
+            "element": "<input class='full' placeholder='when was it last changed...' id='updated_at' />",
+            "role": "kendoDateTimePicker",
+            "options": {
+                "animation": false
+            }
+        },
+        {
+            "form_id": 1,
+            "field": "phone_number",
+            "title": "Phone Number",
+            "description": "enter your phone number",
+            "element": "<input placeholder='enter phone number...' class='k-textbox full' />",
+            "role": "kendoMaskedTextBox",
+            "options": {
+                "mask": "(999) 000-0000",
+                "clearPromptChar": true
+            }
+        },
+        {
+            "form_id": 1,
+            "title": "State",
+            "field": "state",
+            "description": "The state you live in",
+            "element": "<input class='full' placeholder='select state...' />",
+            "role": "kendoComboBox",
+            "options": {
+                "dataTextField": "name",
+                "dataValueField": "abbreviation",
+                "valuePrimitive": false,
+                "filter": "startswith",
+                "dataSource": {
+                    "transport": {
+                        "read": {
+                            "url": "data/states.json",
+                            "dataType": "json",
+                            "contentType": "application/json"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "form_id": 1,
+            "field": "_actions",
+            "title": "&nbsp;",
+            "description": "Save or Cancel form",
+            "element": "<button style='margin-right:25px;' class='k-button k-action-save k-state-focused btn-lg'>Save</button><button class='k-button k-action-close k-state-focused btn-lg'>Cancel</button>"
+        },
+        {
+            "form_id": 2,
+            "field": "form_id",
+            "title": "Form Id",
+            "description": "The Id of the form this field is a part of",
+            "element": "<input class='k-textbox full' />"
+        },
+        {
+            "form_id": 2,
+            "field": "field",
+            "title": "Field",
+            "description": "The name of the field",
+            "element": "<input class='k-textbox full' />"
+        },
+        {
+            "form_id": 2,
+            "field": "description",
+            "title": "Description",
+            "description": "Describe the form field",
+            "element": "<textarea class='k-textbox full' rows='4'></textarea>"
+        },
+        {
+            "form_id": 2,
+            "field": "element",
+            "title": "HTML Element",
+            "description": "The HTML element to use",
+            "element": "<input placeholder='select from common input types...' />",
+            "role": "kendoComboBox",
+            "options": {
+                "dataTextField": "name",
+                "dataValueField": "value",
+                "valuePrimitive": false,
+                "dataSource": {
+                    "data": [
+                        { "name": "input", "value": "<input class='k-textbox full' />" },
+                        { "name": "textarea", "value": "<textarea class='k-textbox' rows='4'></textarea>" }
+                    ]
+                }
+            }
+        },
+        {
+            "form_id": 2,
+            "field": "role",
+            "title": "Kendo Role",
+            "description": "The kendo editor to use",
+            "element": "<input placeholder='select from supported kendo editors...' />",
+            "role": "kendoDropDownList",
+            "options": {
+                "dataSource": {
+                    "transport": {
+                        "read": {
+                            "url": "data/kendo-roles.json",
+                            "dataType": "json",
+                            "contentType": "application/json"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "form_id": 2,
+            "field": "options",
+            "title": "Options",
+            "description": "Options for the kendo role",
+            "element": "<textarea class='k-textbox full' rows='4'></textarea>"
+        },
+        {
+            "form_id": 2,
+            "field": "_actions",
+            "title": "&nbsp;",
+            "description": "Save or Cancel form",
+            "element": "<button style='margin-right:25px;' class='k-button k-action-save k-state-focused btn-lg'>Save</button><button class='k-button k-action-close k-state-focused btn-lg'>Cancel</button>"
+        },
+        {
+            "form_id": 3,
+            "field": "id",
+            "title": "Form Id",
+            "description": "The id of this form",
+            "element": "<input class='k-textbox full' />"
+        },
+        {
+            "form_id": 3,
+            "field": "name",
+            "title": "Name",
+            "description": "The name of this form",
+            "element": "<input class='k-textbox full' />"
+        },
+        {
+            "form_id": 3,
+            "field": "description",
+            "title": "Description",
+            "description": "The description of this form",
+            "element": "<textarea class='k-textbox full' rows='4'></textarea>"
+        },
+        {
+            "form_id": 3,
+            "field": "wrapper",
+            "title": "Wrapper",
+            "description": "The name of the wrapper to use for this form",
+            "element": "<input class='k-textbox full' />"
+        },
+        {
+            "form_id": 3,
+            "field": "_actions",
+            "title": "&nbsp;",
+            "description": "Save or Cancel form",
+            "element": "<button style='margin-right:25px;' class='k-button k-action-save k-state-focused btn-lg'>Save Form</button><button class='k-button k-action-close k-state-focused btn-lg'>Cancel</button>"
+        }
+    ],
+    "total": 7
+}

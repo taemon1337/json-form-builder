@@ -1,0 +1,23 @@
+<div>
+    <div id="form-grid"
+        data-role="grid"
+        data-toolbar="['create']"
+        data-bind="source: forms, events: { dataBound: dataBound }"
+        data-columns="[
+            {
+                title: 'Id',
+                field: 'id'
+            },
+            {
+                title: 'Name',
+                field: 'name'
+            },
+            {
+                title: 'Description',
+                field: 'description'
+            },
+            {
+                command: [{ name: 'show', text: 'Show Form' }]
+            }
+        ]"></div>
+</div>

@@ -1,0 +1,37 @@
+{
+    "wrappers": [
+        {
+            "name": "default",
+            "form_wrapper": "<div class='form form-default'></div>",
+            "form_selector": ".form-default",
+            "template": "<dl><dd></dd><dt></dt></dl>",
+            "title_selector": "dd",
+            "field_selector": "dt"
+        },
+        {
+            "name": "bootstrap",
+            "form_wrapper": "<div class='container-fluid'><div class='form form-bootstrap'></div></div>",
+            "form_selector": ".form-bootstrap",
+            "template": "<div class='form-group'><label class='title-wrapper control-label' for=''></label><div class='input-wrapper'></div></div>",
+            "title_selector": ".title-wrapper",
+            "field_selector": ".input-wrapper"
+        },
+        {
+            "name": "bootstrap-horizontal",
+            "form_wrapper": "<div class='container-fluid'><div class='row'><div class='col-xs-12'><div class='form-horizontal'></div></div></div></div>",
+            "form_selector": ".form-horizontal",
+            "template": "<div class='form-group'><label class='control-label col-xs-3'></label><div class='col-xs-9'><div class='field-wrapper'></div></div></div>",
+            "title_selector": ".control-label",
+            "field_selector": ".field-wrapper"
+        },
+        {
+            "name": "bootstrap-custom",
+            "form_wrapper": "<div class='container-fluid'><div class='row'><div class='col-xs-12'><div class='form-custom'></div></div></div></div>",
+            "form_selector": ".form-custom",
+            "template": "<div class='row form-group'><label class='title-wrapper col-xs-4 control-label'></label><div class='col-xs-8'><div class='field-wrapper full'></div></div></div>",
+            "title_selector": ".title-wrapper",
+            "field_selector": ".field-wrapper"
+        }
+    ],
+    "total": 3
+}
